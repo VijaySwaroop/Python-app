@@ -2,7 +2,7 @@ version: "3"
 services:
   python-fe:
     # replace username/repo:tag with your name and image details
-    image: kammana/python-app:0.0.2
+    image: kammana/python-app:7
     deploy:
       replicas: 5
       restart_policy:
@@ -15,7 +15,7 @@ services:
       - "80:5000"
     networks:
       - javahome
-  redis-be:
+  redis:
     # replace username/repo:tag with your name and image details
     image: redis
     deploy:
